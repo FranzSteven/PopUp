@@ -1,0 +1,78 @@
+/*
+body{
+    background-color: bisque;
+}
+
+#karlos{
+
+    width: 200px;
+    height: 200px;
+    object-fit:cover
+}
+
+#top-bar{
+
+    border-bottom: 1px solid;
+    background-color: green;
+}
+
+#nav-row{
+
+    background-color: aliceblue;
+}
+.prods{
+    background-color: red;
+}
+*/
+
+@font-face {
+    font-family: "Wonderbar";
+    src: url("fonts/Wonderbar\ Demo.otf");
+    font-family: "Cooper Schwarz";
+    src: url("fonts/COOPBL.TTF");
+}   
+
+body{
+    background-color: #FCF4DD;
+    
+}
+
+#nav{
+    box-shadow: 0px 4px 10px;
+    font-family: "Cooper Schwarz";
+}
+#main-title{
+    text-align: right;
+    font-family: "Wonderbar";
+    color: #008F5E;
+    font-size: 15vh;
+}
+
+.under-title{
+    font-family: "Cooper Schwarz";
+    color: #FFB300 ;
+}
+
+#title-pic{
+    border-radius: 50px;
+    width: 90vh;
+    height: 65vh;
+    object-fit: cover;
+    box-shadow: 0px 3px 10px;
+
+}
+
+nav{
+    background-color:#008F5E ;
+}
+
+#box{
+
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    text-align: center;
+    top: 50vh;
+    left: -100px;;
+}
