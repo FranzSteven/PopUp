@@ -69,10 +69,12 @@ nav{
 #box{
 
     position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    text-align: center;
-    top: 50vh;
-    left: -100px;;
+    top:50vh;
+    left: -350px;
+
+}
+
+#ran-num{
+
+    opacity: 0;
 }
