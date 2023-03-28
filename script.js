@@ -137,6 +137,19 @@ function playSound(){
 
     audio.play();
 }
+
+
+function stick(){
+
+    let box = document.getElementById("box");
+    let boxY = box.style.top.substring(0,box.style.top.indexOf("p"));
+    let body = document.body;
+    body.addEventListener(("scroll"), sticktoit);
+    function sticktoit(){
+        console.log("stick?"+document.body);
+    }
+   
+}
 function init(){
  
     let k = document.getElementById("navbrand");
@@ -144,27 +157,27 @@ function init(){
     setTimeout(box,1000);
     blinken(document.getElementById("poptitle"));
     setTimeout(aufklappen,500);
-    blendIn();
+    //blendIn();
     //document.getElementById("accept").addEventListener("click",document.getElementById("popsound").play);
     let denied = document.getElementById("deny");
     denied.addEventListener("mousedown",randomPosition);
     //stick();
+   
 
    
 }
 
-function stick(){
-
-    let box = document.getElementById("box");
-    let boxY = box.style.top.substring(0,box.style.top.indexOf("p"));
-}
 
 function scrollNot(){
 
     let box = document.getElementById("box");
-    let curYpos = box.style.top.substring(0,box.style.top.indexOf("p"));
-    box.style.top = window.pageYOffset+500+ "px";
-    console.log(curYpos);
+    const curYpos = box.style.top.substring(0,box.style.top.indexOf("p"));
+    //box.style.top = window.pageYOffset+curYpos+ "px"
+    let body = document.body;
+    body.addEventListener(("scroll"), sticktoit);
+    function sticktoit(){
+        console.log("stick?"+document.body);
+    }
 
 
 }
